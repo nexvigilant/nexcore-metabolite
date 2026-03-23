@@ -1,0 +1,17 @@
+[package]
+name = "nexcore-metabolite"
+version = "0.1.0"
+edition = "2024"
+description = "Phase I/II metabolite and degradant prediction engine"
+license = "LicenseRef-NexVigilant-Proprietary"
+
+[dependencies]
+nexcore-error = { workspace = true }
+nexcore-molcore = { path = "../nexcore-molcore" }
+prima-chem = { path = "../prima-chem" }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+
+
+[lints]
+workspace = true
